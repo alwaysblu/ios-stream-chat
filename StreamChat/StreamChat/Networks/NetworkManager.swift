@@ -70,7 +70,7 @@ final class NetworkManager: NSObject {
                       inputStream.read(data: &data) > 0,
                       let message = String(data: data, encoding: .utf8)
                 else { return }
-                delegate?.chatViewModelWillGetReceivedMessage(message)
+                delegate?.networkManagerWillDeliverReceivedMessage(message)
             default: break
             }
         }

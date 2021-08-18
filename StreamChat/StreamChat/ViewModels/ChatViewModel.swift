@@ -56,7 +56,7 @@ final class ChatViewModel {
 }
 
 extension ChatViewModel: NetworkManagerDelegate {
-    func chatViewModelWillGetReceivedMessage(_ message: String) {
+    func networkManagerWillDeliverReceivedMessage(_ message: String) {
         guard let ownUserName = ownUserName else { return }
         let senderType = StreamData.findOutIdentifierOfMessage(message: message, ownUserName: ownUserName)
         let senderName = StreamData.findOutSenderNameOfMessage(message: message)

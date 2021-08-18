@@ -6,5 +6,5 @@
 //
 
 protocol NetworkManagerDelegate: AnyObject {
-    func chatViewModelWillGetReceivedMessage(_ message: String)
+    func networkManagerWillDeliverReceivedMessage(_ message: String)
 }
