@@ -12,6 +12,6 @@ enum UnitTestConstants {
     static let captureStreamsCall = "captureStreamsCall"
     static let outputStreamScheduleCall = "outputStreamScheduleCall"
     static let inputStreamScheduleCall = "inputStreamScheduleCall"
-    static let inputStreamOpen = "inputStreamOpen"
-    static let outputStreamOpen = "outputStreamOpen"
+    static let inputStreamOpenCall = "inputStreamOpenCall"
+    static let outputStreamOpenCall = "outputStreamOpenCall"
 }

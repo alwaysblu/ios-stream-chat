@@ -11,7 +11,7 @@ final class MockOutputStream: OutputStreamProtocol {
     weak var delegate: StreamDelegate?
     
     func open() {
-        UnitTestVariables.appendFunctionNameIntoServerConnectionTestList(UnitTestConstants.outputStreamOpen)
+        UnitTestVariables.appendFunctionNameIntoServerConnectionTestList(UnitTestConstants.outputStreamOpenCall)
     }
     
     func close() {

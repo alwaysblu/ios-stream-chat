@@ -35,7 +35,7 @@ final class ChatViewModel {
         messages = []
     }
     
-    // MARK: Network function
+    // MARK: NetworkManager Interface
     
     func connectServer() {
         networkManager.connectServer()

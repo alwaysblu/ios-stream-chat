@@ -8,10 +8,12 @@
 import Foundation
 
 final class MockInputStream: InputStreamProtocol {
+    static var data: Data?
+    
     weak var delegate: StreamDelegate?
     
     func open() {
-        UnitTestVariables.appendFunctionNameIntoServerConnectionTestList(UnitTestConstants.inputStreamOpen)
+        UnitTestVariables.appendFunctionNameIntoServerConnectionTestList(UnitTestConstants.inputStreamOpenCall)
     }
     
     func close() {
@@ -19,7 +21,8 @@ final class MockInputStream: InputStreamProtocol {
     }
     
     func read(data: inout Data) -> Int {
-        return 0
+        data = MockInputStream.data!
+        return data.count
     }
     
     func schedule(in aRunLoop: RunLoop, forMode mode: RunLoop.Mode) {

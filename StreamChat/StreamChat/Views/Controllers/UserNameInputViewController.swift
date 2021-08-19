@@ -75,7 +75,7 @@ final class UserNameInputViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = true
     }
     
-    // MARK: Set Constraints
+    // MARK: Constraints Setting
     
     private func setConstraintOfUserNameTextField() {
         NSLayoutConstraint.activate([
