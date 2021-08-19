@@ -22,6 +22,10 @@ final class MockOutputStream: OutputStreamProtocol {
         return 0
     }
     
+    func write(_ buffer: UnsafePointer<UInt8>, maxLength len: Int) -> Int {
+        return 0
+    }
+    
     func schedule(in aRunLoop: RunLoop, forMode mode: RunLoop.Mode) {
         UnitTestVariables.appendFunctionNameIntoServerConnectionTestList(UnitTestConstants.outputStreamScheduleCall)
     }

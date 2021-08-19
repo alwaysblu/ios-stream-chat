@@ -17,6 +17,8 @@ protocol OutputStreamProtocol {
     @discardableResult
     func write(data: Data) -> Int
     
+    func write(_ buffer: UnsafePointer<UInt8>, maxLength len: Int) -> Int
+    
     func schedule(in aRunLoop: RunLoop, forMode mode: RunLoop.Mode)
     
 }

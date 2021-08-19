@@ -94,6 +94,10 @@ extension NetworkManager: StreamDelegate {
 
 extension OutputStream {
     func write(data: Data) -> Int {
+        writeDataInOuputStream(data: data)
+    }
+    
+    func writeDataInOuputStream(data: Data) -> Int {
         let count = data.count
         return data.withUnsafeBytes {
             return write($0.bindMemory(to: UInt8.self).baseAddress!, maxLength: count)

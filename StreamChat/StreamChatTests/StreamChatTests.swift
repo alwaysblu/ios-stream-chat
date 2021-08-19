@@ -58,4 +58,10 @@ class StreamChatTests: XCTestCase, NetworkManagerDelegate {
         networkManager.reactToStreamEvent(mockInputStream, handle: .hasBytesAvailable, inputStream: inputStream, delegate: networkMangerDelegate)
         XCTAssertEqual(expectedMessage, receivedMessage)
     }
+    
+    func test_outputStream_데이터_쓰기_성공() throws {
+        let expectedMessage = "test!!!"
+        networkManager.send(message: expectedMessage)
+        
+    }
 }
