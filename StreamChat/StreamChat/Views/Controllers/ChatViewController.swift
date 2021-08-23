@@ -30,6 +30,7 @@ final class ChatViewController: UIViewController {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.backgroundColor = .systemGray2
+        textField.layer.cornerRadius = 10
         return textField
     }()
     
@@ -39,6 +40,7 @@ final class ChatViewController: UIViewController {
         button.backgroundColor = .yellow
         button.setImage(UIImage(systemName: "shift.fill"), for: .normal)
         button.tintColor = .darkGray
+        button.layer.cornerRadius = 10
         button.addTarget(self, action: #selector(sendButton), for: .touchDown)
         return button
     }()
@@ -134,20 +136,14 @@ final class ChatViewController: UIViewController {
     }
     
     private func setTypingContainerView() {
-        typingContainerView.backgroundColor = .darkGray
         setConstraintOfTypingContainerView()
     }
     
     private func setTypingTextField() {
-        typingTextField.backgroundColor = .systemGray
-        typingTextField.layer.cornerRadius = 10
         setConstraintOfTypingTextField()
     }
     
     private func setMessageSendButton() {
-        messageSendButton.layer.cornerRadius = 10
-        messageSendButton.backgroundColor = .yellow
-        messageSendButton.tintColor = .darkGray
         setConstraintOfMessageSendButton()
     }
     

@@ -17,22 +17,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         
-        let userNameInputViewController = setUpRootViewController()
+        let userNameInputViewController = Builder().create()
         window?.rootViewController = UINavigationController(rootViewController: userNameInputViewController)
         window?.makeKeyAndVisible()
-    }
-    
-    private func setUpRootViewController() -> UserNameInputViewController {
-        let netWorkManager = NetworkManager()
-        let session = URLSession(configuration: .default,
-                                 delegate: netWorkManager,
-                                 delegateQueue: .main)
-        let streamTask = session.streamTask(withHostName: NetworkAddress.ipAddress,
-                                                port: NetworkAddress.port)
-        netWorkManager.setStreamTask(streamTask)
-        let chatViewModel = ChatViewModel(networkManager: netWorkManager)
-        let chatViewController = ChatViewController(chatViewModel: chatViewModel)
-        return UserNameInputViewController(chatViewController: chatViewController)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

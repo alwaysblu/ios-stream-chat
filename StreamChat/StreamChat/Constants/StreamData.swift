@@ -17,7 +17,7 @@ enum StreamData {
     }
     
     static func convertMessageToSendFormat(_ message: String) -> String {
-        "MSG::\(message)::END"
+        return "MSG::\(message)::END"
     }
     
     static func convertDateToString(date: Date) -> String {
@@ -62,6 +62,6 @@ enum StreamData {
 
 extension StreamData {
     private static func splitMessage(_ message: String) -> [String] {
-        message.split(separator: ":").map { String($0) }
+        return message.split(separator: ":").map { String($0) }
     }
 }

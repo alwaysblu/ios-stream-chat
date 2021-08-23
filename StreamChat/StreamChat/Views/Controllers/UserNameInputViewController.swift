@@ -39,7 +39,7 @@ final class UserNameInputViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: ViewLifCycle
+    // MARK: View Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()

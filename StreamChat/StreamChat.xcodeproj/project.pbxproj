@@ -19,6 +19,7 @@
 		8A0BE11F26CC42E00049F487 /* MockOutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0BE11E26CC42E00049F487 /* MockOutputStream.swift */; };
 		8A0BE13E26CD47280049F487 /* UnitTestVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0BE13D26CD47280049F487 /* UnitTestVariables.swift */; };
 		8A0BE14126CD473F0049F487 /* UnitTestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0BE14026CD473F0049F487 /* UnitTestConstants.swift */; };
+		8A0BE14626D376700049F487 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0BE14526D376700049F487 /* Builder.swift */; };
 		8A3BC6D926C1BCF500CFABB1 /* MyChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3BC6D826C1BCF500CFABB1 /* MyChatTableViewCell.swift */; };
 		8A3BC6DC26C1C63900CFABB1 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3BC6DB26C1C63900CFABB1 /* Chat.swift */; };
 		8A3BC6E026C2505A00CFABB1 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3BC6DF26C2505A00CFABB1 /* ChatViewModel.swift */; };
@@ -64,6 +65,7 @@
 		8A0BE11E26CC42E00049F487 /* MockOutputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockOutputStream.swift; sourceTree = "<group>"; };
 		8A0BE13D26CD47280049F487 /* UnitTestVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestVariables.swift; sourceTree = "<group>"; };
 		8A0BE14026CD473F0049F487 /* UnitTestConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestConstants.swift; sourceTree = "<group>"; };
+		8A0BE14526D376700049F487 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		8A3BC6D826C1BCF500CFABB1 /* MyChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatTableViewCell.swift; sourceTree = "<group>"; };
 		8A3BC6DB26C1C63900CFABB1 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		8A3BC6DF26C2505A00CFABB1 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				C7927554262C562B00EF5D3A /* AppDelegate.swift */,
 				C7927556262C562B00EF5D3A /* SceneDelegate.swift */,
 				C792755D262C562E00EF5D3A /* Assets.xcassets */,
+				8A0BE14526D376700049F487 /* Builder.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				8A3BC6EC26C5A06800CFABB1 /* UserNameInputViewController.swift in Sources */,
 				8A3BC6F526C64AE700CFABB1 /* SenderIdentifier.swift in Sources */,
 				C7927557262C562B00EF5D3A /* SceneDelegate.swift in Sources */,
+				8A0BE14626D376700049F487 /* Builder.swift in Sources */,
 				8A0BE11526CC32BA0049F487 /* URLSessionStreamTaskProtocol.swift in Sources */,
 				8A0BE11D26CC42CF0049F487 /* MockInputStream.swift in Sources */,
 				8A0BE14126CD473F0049F487 /* UnitTestConstants.swift in Sources */,
