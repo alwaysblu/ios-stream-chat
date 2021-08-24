@@ -16,3 +16,6 @@
 # 구현
 
 https://user-images.githubusercontent.com/75533266/129351429-3dc533d2-5f3b-4200-ac1b-bc81df343d0c.mp4
+
+![stream](https://user-images.githubusercontent.com/75533266/130572793-af303128-0b8f-4db2-a11f-1982d3930782.gif)
+
