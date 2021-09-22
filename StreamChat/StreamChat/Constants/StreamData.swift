@@ -9,7 +9,7 @@ import Foundation
 
 enum StreamData {
     static let leaveMessage = "LEAVE::::END"
-    
+    static let sharedDateFormatter = DateFormatter()
     // MARK: Convert Function
     
     static func convertMessageToJoinFormat(userName: String) -> String {
@@ -21,14 +21,13 @@ enum StreamData {
     }
     
     static func convertDateToString(date: Date) -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "ko_kr")
-        dateFormatter.dateFormat = "M월 d일 a h시 m분"
-        dateFormatter.amSymbol = "오전"
-        dateFormatter.pmSymbol = "오후"
-        dateFormatter.timeZone = TimeZone.current
+        sharedDateFormatter.locale = Locale(identifier: "ko_kr")
+        sharedDateFormatter.dateFormat = "M월 d일 a h시 m분"
+        sharedDateFormatter.amSymbol = "오전"
+        sharedDateFormatter.pmSymbol = "오후"
+        sharedDateFormatter.timeZone = TimeZone.current
 
-        return dateFormatter.string(from: date)
+        return sharedDateFormatter.string(from: date)
     }
     
     // MARK: Find Function
